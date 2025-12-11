@@ -1,49 +1,47 @@
-⚖️ JS-Legislative-Flow: Análise Multiparadigma
+# ⚖️ JS Legislative Logic - Simulador de Processo Legislativo
 
-Este repositório contém uma coleção de scripts desenvolvidos para demonstrar a versatilidade do JavaScript, comparando sua aplicação no Front-end (Visual) contra sua capacidade de Lógica Pura (Backend/Console).
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Logic](https://img.shields.io/badge/Lógica-Algoritmos-blue?style=for-the-badge)
+![Console](https://img.shields.io/badge/Console-App-gray?style=for-the-badge)
 
-O projeto utiliza uma Simulação do Processo Legislativo Brasileiro como estudo de caso.
+> **Projeto Acadêmico | SENAI Roberto Simonsen** > *Disciplina: Linguagem de Marcação*
 
-📂 Arquivos do Projeto
+Este repositório contém um script desenvolvido em **JavaScript Puro (Vanilla JS)**, focado 100% na prática de lógica de programação e estruturação de dados, sem a utilização de interfaces gráficas (HTML/CSS).
 
-1. 🎨 Abordagem Visual (simuladolegislacao.html)
+O projeto utiliza uma **Simulação do Processo Legislativo Brasileiro** como estudo de caso para a aplicação prática de Máquinas de Estados.
 
-Aplicação web interativa que demonstra a dependência do JavaScript com outras linguagens para criar interfaces.
+---
 
-O que faz: Interface gráfica com botões e painel de progresso da lei.
+## 📂 Sobre o Arquivo (`simuladorlegislacao.js`)
 
-Linguagens: HTML5 + CSS3 + JavaScript.
+O script foca puramente no processamento de dados e tomada de decisões lógicas.
 
-Conceitos: Manipulação do DOM, Event Listeners, CSS Flexbox/Grid.
+* **O que faz:** Simula o caminho de uma lei (da proposta inicial até a sanção presidencial) através de interações e logs.
+* **Objetivo:** Demonstrar o controle de fluxo complexo sem depender de elementos visuais.
 
-2. 🧠 Abordagem Lógica Pura (simuladorlegislacao.js)
+## 🧠 Conceitos e Tecnologias
 
-Script focado puramente no processamento de dados, sem interface gráfica.
+O projeto aborda conceitos fundamentais da Ciência da Computação aplicados ao JavaScript:
 
-O que faz: Roda o mesmo jogo através de janelas de alerta e histórico no console.
+* **🔄 Máquina de Estados (State Machine):** Controle do status da lei (Ex: *Em votação* -> *Aprovado* -> *Sancionado*).
+* **📦 Objetos e Arrays (JSON):** Estruturação dos dados da lei e dos parlamentares.
+* **elipsoide Funções e Recursividade:** Reutilização de código e chamadas de funções dentro de funções para avançar as etapas.
+* **🔀 Lógica Condicional:** Uso intenso de `if/else` e `switch` para determinar o destino da proposta.
 
-Linguagens: JavaScript Puro (Vanilla JS).
+---
 
-Conceitos: Máquina de Estados (State Machine), Objetos JSON, Recursividade.
+## 🛠️ Como executar
 
-🛠️ Como executar
+Este código foi projetado para ser agnóstico de plataforma, rodando diretamente no Console do Navegador ou em ambientes server-side.
 
-Para a Versão Visual (simuladolegislacao.html)
+### Opção 1: Console do Navegador (Mais fácil)
+1.  Abra seu navegador (Chrome, Edge, Firefox, etc).
+2.  Aperte a tecla **F12** (ou clique com botão direito na página -> *Inspecionar*).
+3.  Vá na aba **Console**.
+4.  Copie todo o código do arquivo `simuladorlegislacao.js`.
+5.  Cole no console e aperte **Enter**.
 
-Basta baixar o arquivo e clicar duas vezes para abrir no seu navegador (Chrome, Edge, Firefox).
-
-Para a Versão Lógica (simulador_console.js)
-
-Abra o navegador e aperte F12.
-
-Vá na aba Console.
-
-Copie o código do arquivo, cole lá e aperte Enter.
-
-👨‍💻 Autor
-
-Jhonatan Pinheiro Lima Palmeira
-
-Instituição: SENAI Roberto Simonsen
-
-Matéria: Linguagem de Marcação
+### Opção 2: Node.js (Terminal)
+Caso tenha o Node instalado:
+```bash
+node simuladorlegislacao.js
